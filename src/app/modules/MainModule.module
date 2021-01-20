@@ -1,0 +1,15 @@
+{
+  "props": [],
+  "components": {
+    "downloader": {
+      "type": "bundle\\http\\HttpDownloader",
+      "x": 64,
+      "y": 32,
+      "props": {
+        "useTempFile": true,
+        "threadCount": 20,
+        "breakOnError": true
+      }
+    }
+  }
+}

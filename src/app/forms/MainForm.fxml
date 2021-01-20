@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416" prefWidth="688" styleClass="">
+  <children>
+    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="downloadButton" layoutX="568" layoutY="16" prefHeight="32" prefWidth="112" styleClass="button " text="Скачать файл" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </Button>
+    <Data cursor="DEFAULT" enabled="1" graphic=".data/img/2db2de00-9f05-430d-b2fe-aa2dfa4ca53a-1451774381117.png" id="data-downloadButton" visible="1"/>
+    <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="urlEdit" layoutX="8" layoutY="432" prefColumnCount="12" prefHeight="32" prefWidth="552" promptText="http ссылка для скачивания  файла" styleClass="text-input text-field " text="https://github.com/Den4enko/Internet-Game/releases/download/test/Game.zip">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </TextField>
+    <Data cursor="DEFAULT" enabled="1" id="data-urlEdit" visible="1"/>
+    <Panel AnchorPane.bottomAnchor="8" AnchorPane.topAnchor="312" backgroundColor="#4d4d4d" borderColor="#333333" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel" layoutX="8" layoutY="312" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="96" prefWidth="672" styleClass="" titleColor="#dcdcdc" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ProgressBar AnchorPane.bottomAnchor="13" focusTraversable="false" id="progressBar" layoutX="16" layoutY="64" prefHeight="18" prefWidth="640" progress="0" styleClass="progress-bar "/>
+        <Data cursor="DEFAULT" enabled="1" id="data-progressBar" visible="1"/>
+        <LabelEx AnchorPane.bottomAnchor="38" alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="speedLabel" layoutX="16" layoutY="40" prefHeight="15.9609375" prefWidth="48.3046875" styleClass="label " text="XXX Kb/s" textAlignment="LEFT" textFill="#cccccc" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-speedLabel" visible=""/>
+        <Button AnchorPane.bottomAnchor="47" AnchorPane.rightAnchor="15" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="stopButton" layoutX="552" layoutY="16" prefHeight="32" prefWidth="104" styleClass="button " text="Прервать" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </Button>
+        <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="fileNameLabel" layoutX="16" layoutY="64" prefHeight="17" prefWidth="632" styleClass="label " text="FileName" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-fileNameLabel" visible=""/>
+        <Data cursor="DEFAULT" graphic=".data/img/0b1f7730-2e8c-40f7-bc40-5504a6a7e1ce-1443098717609.png" id="data-stopButton"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="sizeLabel" layoutX="16" layoutY="24" prefHeight="15.9609375" prefWidth="30.099609375" styleClass="label " text="X Mb" textAlignment="LEFT" textFill="#e6e6e6" underline="false" wrapText="false">
+          <font>
+            <Font name="System Bold" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-sizeLabel" visible=""/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="" id="data-panel" visible="1"/>
+  </children>
+</AnchorPane>
