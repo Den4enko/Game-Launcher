@@ -113,32 +113,17 @@
       </font>
     </LabelEx>
     <Data cursor="DEFAULT" enabled="1" id="data-optionsLabel" visible="1"/>
-    <TitledPane alignment="CENTER" animated="true" collapsible="true" contentDisplay="TEXT_ONLY" ellipsisString="..." expanded="false" focusTraversable="true" graphicTextGap="0" id="spoiler" layoutX="40" layoutY="200" prefHeight="88" prefWidth="120" styleClass="titled-pane " text="Спойлер" textAlignment="CENTER" underline="false" wrapText="false">
+    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="downloadButton" layoutX="8" layoutY="272" prefHeight="32" prefWidth="120" styleClass="button " text="Обновить" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Regular" size="12"/>
       </font>
-      <content>
-        <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="84" prefWidth="140" styleClass="">
-          <padding>
-            <Insets bottom="9.6" left="9.6" right="9.6" top="9.6"/>
-          </padding>
-          <children>
-            <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="downloadButton" layoutX="0" layoutY="0" prefHeight="32" prefWidth="120" styleClass="button " text="Обновить" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
-              <font>
-                <Font name="System Regular" size="12"/>
-              </font>
-            </Button>
-            <Data cursor="DEFAULT" enabled="1" graphic=".data/img/download.png" id="data-downloadButton" visible=""/>
-            <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="startButton" layoutX="0" layoutY="32" prefHeight="32" prefWidth="120" styleClass="button " text="Играть" textAlignment="CENTER" underline="false" wrapText="false">
-              <font>
-                <Font name="System Regular" size="12"/>
-              </font>
-            </Button>
-            <Data cursor="DEFAULT" enabled="1" graphic=".data/img/play.png" id="data-startButton" visible=""/>
-          </children>
-        </AnchorPane>
-      </content>
-    </TitledPane>
-    <Data cursor="DEFAULT" enabled="1" id="data-spoiler" visible="1"/>
+    </Button>
+    <Data cursor="DEFAULT" enabled="1" graphic=".data/img/download.png" id="data-downloadButton" visible=""/>
+    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="startButton" layoutX="8" layoutY="272" prefHeight="32" prefWidth="120" styleClass="button " text="Играть" textAlignment="CENTER" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </Button>
+    <Data cursor="DEFAULT" enabled="1" graphic=".data/img/play.png" id="data-startButton" visible=""/>
   </children>
 </AnchorPane>
