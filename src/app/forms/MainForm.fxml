@@ -118,8 +118,8 @@
         <Font name="System Regular" size="12"/>
       </font>
     </Button>
-    <Data cursor="DEFAULT" enabled="1" graphic=".data/img/download.png" id="data-downloadButton" visible=""/>
-    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="startButton" layoutX="8" layoutY="272" prefHeight="32" prefWidth="120" styleClass="button " text="Играть" textAlignment="CENTER" underline="false" wrapText="false">
+    <Data cursor="DEFAULT" enabled="1" graphic=".data/img/download.png" id="data-downloadButton" visible="1"/>
+    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="startButton" layoutX="48" layoutY="232" prefHeight="32" prefWidth="120" styleClass="button " text="Играть" textAlignment="CENTER" underline="false" wrapText="false">
       <font>
         <Font name="System Regular" size="12"/>
       </font>

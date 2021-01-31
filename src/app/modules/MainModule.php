@@ -1,6 +1,7 @@
 <?php
 namespace app\modules;
 
+use bundle\updater\UpdateMe;
 use action\Element;
 use php\lib\fs;
 use php\compress\ZipFile;
@@ -12,7 +13,7 @@ use php\gui\framework\ScriptEvent;
 
 class MainModule extends AbstractModule
 {
-
+const VERSION = '0.0.2';
     /**
      * @event downloader.progress 
      */
@@ -79,6 +80,14 @@ class MainModule extends AbstractModule
         
         Element::loadContentAsync($this->gameVer, "game/ver.txt", function () use ($e, $event) {});
         $this->fileNameLabel->text = "Готово";
+    }
+
+    /**
+     * @event construct 
+     */
+    function doConstruct(ScriptEvent $e = null)
+    {    
+
     }
 
 }

@@ -16,7 +16,7 @@ use php\gui\event\UXMouseEvent;
 
 class MainForm extends AbstractForm
 {
-const VERSION = '0.0.2';
+
     }
 
     /**
@@ -57,10 +57,10 @@ const VERSION = '0.0.2';
     /**
      * @event downloadButton.action 
      */
-    function doDownloadButtonAction(UXEvent $e = null)
+    function doDownloadButtonClick(UXEvent $e = null)
     {
                 
-              {$this->fileNameLabel->text = "Создание временной папки...";
+              $this->fileNameLabel->text = "Создание временной папки...";
                fs::makeDir('temp');
                $this->downloader->destDirectory = "temp/"; 
                 $this->downloader->urls = 'https://github.com/Den4enko/Internet-Game/releases/download/test/Game.zip';
@@ -76,10 +76,11 @@ const VERSION = '0.0.2';
             
             }
 
+
     /**
-     * @event construct 
+     * @event show 
      */
-    function doConstruct(UXEvent $e = null)
+    function doShow(UXWindowEvent $e = null)
     {    
     UpdateMe::start(self::VERSION);
     if (fs::exists("game/ver.txt")) {
@@ -87,7 +88,7 @@ const VERSION = '0.0.2';
     $this->downloadButton->visible = false;
     $this->startButton->visible = true;
     $this->optionsPanel->enabled = true;
-        } else { 
+} else { 
     Element::setText($this->gameVer, 'Игра не установлена');
     $this->downloadButton->text = "Установить";
     $this->downloadButton->visible = true;
@@ -95,4 +96,4 @@ const VERSION = '0.0.2';
     $this->gameVer->visible = true;
     }
         
-    }
+    
