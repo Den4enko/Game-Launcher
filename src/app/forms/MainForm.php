@@ -29,32 +29,8 @@ const VERSION = '0.0.2';
         }
     }
 
-    /**
-     * @event show 
-     */
-    function doShow(UXWindowEvent $e = null)
-    {    
-        UpdateMe::start(self::VERSION);
-    }
 
 
-    /**
-     * @event construct 
-     */
-    function doConstruct(UXEvent $e = null)
-    {   
-        if (fs::exists("game/ver.txt")) {
-            Element::loadContentAsync($this->gameVer, "game/ver.txt", function () use ($e, $event) {});
-            $this->downloadButton->visible = false;
-            $this->startButton->visible = true;
-            $this->optionsPanel->enabled = true;
-        } else { 
-            Element::setText($this->gameVer, 'Игра не установлена');
-            $this->downloadButton->text = "Установить";
-            $this->downloadButton->visible = true;
-        }
-            $this->gameVer->visible = true;
-    }
 
     /**
      * @event deleteButton.click 
@@ -67,37 +43,7 @@ const VERSION = '0.0.2';
         $this->fileNameLabel->text = "Очищено";
     }
 
-    /**
-     * @event reinstallButton.click-Left 
-     */
-    function doReinstallButtonClickLeft(UXMouseEvent $e = null)
-    {    
 
-        
-        
-    }
-
-    /**
-     * @event downloadButton.action 
-     */
-    function doDownloadButtonAction(UXEvent $e = null)
-    {
-            
-          {$this->fileNameLabel->text = "Создание временной папки...";
-           fs::makeDir('temp');
-           $this->downloader->destDirectory = "temp/"; 
-            $this->downloader->urls = 'https://github.com/Den4enko/Internet-Game/releases/download/test/Game.zip';
-            $this->downloader->start();
-            
-            $this->stopButton->enabled = true;
-            $this->downloadButton->enabled = false;
-            
-            $this->fileNameLabel->text = "Подождите...";
-            $this->fileNameLabel->show();
-            
-        
-        
-        }
 
     /**
      * @event startButton.click-Left 
@@ -107,4 +53,46 @@ const VERSION = '0.0.2';
         open("game/Game.jar", false);
         app()->shutdown();
     }
+
+    /**
+     * @event downloadButton.action 
+     */
+    function doDownloadButtonAction(UXEvent $e = null)
+    {
+                
+              {$this->fileNameLabel->text = "Создание временной папки...";
+               fs::makeDir('temp');
+               $this->downloader->destDirectory = "temp/"; 
+                $this->downloader->urls = 'https://github.com/Den4enko/Internet-Game/releases/download/test/Game.zip';
+                $this->downloader->start();
+                
+                $this->stopButton->enabled = true;
+                $this->downloadButton->enabled = false;
+                
+                $this->fileNameLabel->text = "Подождите...";
+                $this->fileNameLabel->show();
+                
+            
+            
+            }
+
+    /**
+     * @event construct 
+     */
+    function doConstruct(UXEvent $e = null)
+    {    
+    UpdateMe::start(self::VERSION);
+    if (fs::exists("game/ver.txt")) {
+    Element::loadContentAsync($this->gameVer, "game/ver.txt", function () use ($e, $event) {});
+    $this->downloadButton->visible = false;
+    $this->startButton->visible = true;
+    $this->optionsPanel->enabled = true;
+        } else { 
+    Element::setText($this->gameVer, 'Игра не установлена');
+    $this->downloadButton->text = "Установить";
+    $this->downloadButton->visible = true;
+        }
+    $this->gameVer->visible = true;
+    }
+        
     }
