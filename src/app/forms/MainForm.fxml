@@ -1,41 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416" prefWidth="688" styleClass="">
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424" prefWidth="688" styleClass="">
   <children>
-    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="downloadButton" layoutX="568" layoutY="16" prefHeight="32" prefWidth="112" styleClass="button " text="Скачать файл" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
-      <font>
-        <Font name="System Regular" size="12"/>
-      </font>
-    </Button>
-    <Data cursor="DEFAULT" enabled="1" graphic=".data/img/2db2de00-9f05-430d-b2fe-aa2dfa4ca53a-1451774381117.png" id="data-downloadButton" visible="1"/>
-    <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="urlEdit" layoutX="8" layoutY="432" prefColumnCount="12" prefHeight="32" prefWidth="552" promptText="http ссылка для скачивания  файла" styleClass="text-input text-field " text="https://github.com/Den4enko/Internet-Game/releases/download/test/Game.zip">
-      <font>
-        <Font name="System Regular" size="12"/>
-      </font>
-    </TextField>
-    <Data cursor="DEFAULT" enabled="1" id="data-urlEdit" visible="1"/>
-    <Panel AnchorPane.bottomAnchor="8" AnchorPane.topAnchor="312" backgroundColor="#4d4d4d" borderColor="#333333" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel" layoutX="8" layoutY="312" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="96" prefWidth="672" styleClass="" titleColor="#dcdcdc" titleOffset="15" titlePosition="TOP_LEFT">
+    <Panel AnchorPane.bottomAnchor="8" AnchorPane.topAnchor="312" backgroundColor="#4d4d4d" borderColor="#333333" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="panel" layoutX="8" layoutY="312" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="104" prefWidth="672" styleClass="" titleColor="#dcdcdc" titleOffset="15" titlePosition="TOP_LEFT">
       <children>
-        <ProgressBar AnchorPane.bottomAnchor="13" focusTraversable="false" id="progressBar" layoutX="16" layoutY="64" prefHeight="18" prefWidth="640" progress="0" styleClass="progress-bar "/>
+        <ProgressBar AnchorPane.bottomAnchor="13" focusTraversable="false" id="progressBar" layoutX="16" layoutY="72" prefHeight="18" prefWidth="640" progress="0" styleClass="progress-bar "/>
         <Data cursor="DEFAULT" enabled="1" id="data-progressBar" visible="1"/>
-        <LabelEx AnchorPane.bottomAnchor="38" alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="speedLabel" layoutX="16" layoutY="40" prefHeight="15.9609375" prefWidth="48.3046875" styleClass="label " text="XXX Kb/s" textAlignment="LEFT" textFill="#cccccc" underline="false" wrapText="false">
+        <LabelEx AnchorPane.bottomAnchor="38" alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="speedLabel" layoutX="16" layoutY="48" prefHeight="15.9609375" prefWidth="48.3046875" styleClass="label " text="XXX Kb/s" textAlignment="LEFT" textFill="#cccccc" underline="false" wrapText="false">
           <font>
             <Font name="System Regular" size="12"/>
           </font>
         </LabelEx>
         <Data cursor="DEFAULT" enabled="1" id="data-speedLabel" visible=""/>
-        <Button AnchorPane.bottomAnchor="47" AnchorPane.rightAnchor="15" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="stopButton" layoutX="552" layoutY="16" prefHeight="32" prefWidth="104" styleClass="button " text="Прервать" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+        <Button AnchorPane.bottomAnchor="47" AnchorPane.rightAnchor="15" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="stopButton" layoutX="552" layoutY="24" prefHeight="32" prefWidth="104" styleClass="button " text="Прервать" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
           <font>
             <Font name="System Regular" size="12"/>
           </font>
         </Button>
-        <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="fileNameLabel" layoutX="16" layoutY="64" prefHeight="17" prefWidth="632" styleClass="label " text="FileName" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+        <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="fileNameLabel" layoutX="16" layoutY="72" prefHeight="17" prefWidth="632" styleClass="label " text="FileName" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
           <font>
             <Font name="System Regular" size="12"/>
           </font>
         </LabelEx>
         <Data cursor="DEFAULT" enabled="1" id="data-fileNameLabel" visible=""/>
-        <Data cursor="DEFAULT" graphic=".data/img/0b1f7730-2e8c-40f7-bc40-5504a6a7e1ce-1443098717609.png" id="data-stopButton"/>
-        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="sizeLabel" layoutX="16" layoutY="24" prefHeight="15.9609375" prefWidth="30.099609375" styleClass="label " text="X Mb" textAlignment="LEFT" textFill="#e6e6e6" underline="false" wrapText="false">
+        <Data cursor="DEFAULT" enabled="1" graphic=".data/img/stop.png" id="data-stopButton" visible=""/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="sizeLabel" layoutX="16" layoutY="32" prefHeight="15.9609375" prefWidth="30.099609375" styleClass="label " text="X Mb" textAlignment="LEFT" textFill="#e6e6e6" underline="false" wrapText="false">
           <font>
             <Font name="System Bold" size="12"/>
           </font>
@@ -46,6 +34,111 @@
         <Font name="System Regular" size="12"/>
       </titleFont>
     </Panel>
-    <Data cursor="DEFAULT" enabled="" id="data-panel" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+    <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="nameLabel" layoutX="0" layoutY="8" prefHeight="48" prefWidth="344" styleClass="label " text="Internet Game" textAlignment="CENTER" underline="false" wrapText="false">
+      <font>
+        <Font name="Consolas" size="40"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-nameLabel" visible="1"/>
+    <Separator focusTraversable="false" id="separator" layoutX="340" layoutY="0" orientation="VERTICAL" prefHeight="312" prefWidth="8" styleClass="separator "/>
+    <Data cursor="DEFAULT" enabled="1" id="data-separator" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="launcherVerLabel" layoutX="624" layoutY="288" prefHeight="15.9609375" prefWidth="54.873046875" styleClass="label " text="0.0.2 BETA" textAlignment="LEFT" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-launcherVerLabel" visible="1"/>
+    <Panel backgroundColor="#333333" borderColor="#000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="VersionPanel" layoutX="16" layoutY="64" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="56" prefWidth="312" styleClass="" titleColor="#dcdcdc" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="gameVer" layoutX="136" layoutY="8" prefHeight="15.9609375" prefWidth="48.849609375" styleClass="label " text="GameVer" textAlignment="LEFT" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-gameVer" visible=""/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="NewGameVer" layoutX="152" layoutY="32" prefHeight="15.9609375" prefWidth="55.265625" styleClass="label " text="Загрузка..." textAlignment="LEFT" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-NewGameVer" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="GameVerText" layoutX="8" layoutY="8" prefHeight="15.9609375" prefWidth="124.201171875" styleClass="label " text="Текущая версия игры: " textAlignment="LEFT" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-GameVerText" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="NewGameVerText" layoutX="8" layoutY="32" prefHeight="15.9609375" prefWidth="134.73046875" styleClass="label " text="Новейшая версия игры: " textAlignment="LEFT" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-NewGameVerText" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-VersionPanel" visible="1"/>
+    <Panel backgroundColor="#333333" borderColor="#000000" borderRadius="0" borderStyle="SOLID" borderWidth="1" focusTraversable="false" id="optionsPanel" layoutX="360" layoutY="64" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="88" prefWidth="312" styleClass="" titleColor="#dcdcdc" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="deleteButton" layoutX="168" layoutY="8" prefHeight="32" prefWidth="136" styleClass="button " text="Удалить файлы" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" graphic=".data/img/delete.png" id="data-deleteButton" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="settingsButton" layoutX="8" layoutY="8" prefHeight="32" prefWidth="144" styleClass="button " text="Настройки игры" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="" graphic=".data/img/settings.png" id="data-settingsButton" visible="1"/>
+        <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="reinstallButton" layoutX="8" layoutY="48" prefHeight="32" prefWidth="296" styleClass="button " text="Переустановить игру" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </Button>
+        <Data cursor="DEFAULT" enabled="1" graphic=".data/img/reinstall.png" id="data-reinstallButton" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="" id="data-optionsPanel" visible="1"/>
+    <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="optionsLabel" layoutX="352" layoutY="8" prefHeight="48" prefWidth="336" styleClass="label " text="Опции" textAlignment="CENTER" underline="false" wrapText="false">
+      <font>
+        <Font name="Consolas" size="40"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-optionsLabel" visible="1"/>
+    <TitledPane alignment="CENTER" animated="true" collapsible="true" contentDisplay="TEXT_ONLY" ellipsisString="..." expanded="false" focusTraversable="true" graphicTextGap="0" id="spoiler" layoutX="40" layoutY="200" prefHeight="88" prefWidth="120" styleClass="titled-pane " text="Спойлер" textAlignment="CENTER" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+      <content>
+        <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="84" prefWidth="140" styleClass="">
+          <padding>
+            <Insets bottom="9.6" left="9.6" right="9.6" top="9.6"/>
+          </padding>
+          <children>
+            <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="downloadButton" layoutX="0" layoutY="0" prefHeight="32" prefWidth="120" styleClass="button " text="Обновить" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+              <font>
+                <Font name="System Regular" size="12"/>
+              </font>
+            </Button>
+            <Data cursor="DEFAULT" enabled="1" graphic=".data/img/download.png" id="data-downloadButton" visible=""/>
+            <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="startButton" layoutX="0" layoutY="32" prefHeight="32" prefWidth="120" styleClass="button " text="Играть" textAlignment="CENTER" underline="false" wrapText="false">
+              <font>
+                <Font name="System Regular" size="12"/>
+              </font>
+            </Button>
+            <Data cursor="DEFAULT" enabled="1" graphic=".data/img/play.png" id="data-startButton" visible=""/>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <Data cursor="DEFAULT" enabled="1" id="data-spoiler" visible="1"/>
   </children>
 </AnchorPane>

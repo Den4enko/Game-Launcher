@@ -1,6 +1,8 @@
 <?php
 namespace app\modules;
 
+use action\Element;
+use php\lib\fs;
 use php\compress\ZipFile;
 use bundle\http\HttpResponse;
 use php\gui\UXDialog;
@@ -34,8 +36,10 @@ class MainModule extends AbstractModule
      */
     function doDownloaderDone(ScriptEvent $event = null)
     {    
-        $this->panel->enabled = false;
-        $this->downloadButton->enabled = true;
+        $this->stopButton->enabled = false;
+        $this->downloadButton->visible = false;
+        $this->startButton->visible = true;
+        $this->optionsPanel->enabled = true;
     }
 
     /**
@@ -64,8 +68,17 @@ class MainModule extends AbstractModule
      */
     function doDownloaderSuccessAll(ScriptEvent $event = null)
     {    
-        $zipFile = new ZipFile('temp/game.zip');
-        $zipFile->unpack('temp/');
+        $this->fileNameLabel->text = "Распаковка...";
+        $zipFile = new ZipFile('temp/Game.zip');
+        $zipFile->unpack('game/');
+        $this->fileNameLabel->text = "Удаление ненужных файлов...";
+        $dir = 'temp';
+        
+        $this->fileNameLabel->text = "Очищаем содержимое папки...";
+        fs::clean($dir); // очищаем содержимое папки
+        
+        Element::loadContentAsync($this->gameVer, "game/ver.txt", function () use ($e, $event) {});
+        $this->fileNameLabel->text = "Готово";
     }
 
 }

@@ -6,7 +6,7 @@
       "x": 64,
       "y": 32,
       "props": {
-        "useTempFile": true,
+        "useTempFile": false,
         "threadCount": 20,
         "breakOnError": true
       }

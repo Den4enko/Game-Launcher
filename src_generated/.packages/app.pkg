@@ -1,4 +1,3 @@
 [classes]
 app\forms\MainForm
-app\modules\AppModule
 app\modules\MainModule

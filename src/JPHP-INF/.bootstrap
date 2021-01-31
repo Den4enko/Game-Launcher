@@ -13,7 +13,6 @@ $packageLoader->register();
 $app = new Application();
 
 $app->loadModules(array (
-  0 => 'app\modules\AppModule',
 ));
 $app->addStyle('/.theme/skin/skin.css');
 $app->addStyle('/.theme/style.fx.css');
